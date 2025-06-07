@@ -24,7 +24,7 @@ class Test {
     public static void main(String[] args) {
         try {
             Student s = new Student("Abishek", 04);
-
+            System.out.println("Name of Student = "+s.name);
         } catch (User_Exception e) {
             System.out.println(e.getMessage());
         }
