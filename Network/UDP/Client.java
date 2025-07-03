@@ -17,6 +17,7 @@ public class Client {
         String data = new String(receiPacket.getData());
         System.out.println("Data : " + data);
         ds.close();
+        scan.close();
     }
 
 }
