@@ -9,11 +9,12 @@ public class MyMenu extends JFrame implements ActionListener {
     JTextArea t;
 
     public MyMenu() {
+        super("I am title");
         setSize(400, 500);
         mb = new JMenuBar();
-        setJMenuBar(mb);
-        menu = new JMenu("Menu");
-        mb.add(menu);
+        setJMenuBar(mb); // put menubar on frame
+        menu = new JMenu("≡");
+        mb.add(menu); // Add menu on menubar
         select = new JMenuItem("Select All");
         c = new JMenuItem("Copy");
         v = new JMenuItem("Paste");
@@ -22,7 +23,7 @@ public class MyMenu extends JFrame implements ActionListener {
         t = new JTextArea();
         t.setToolTipText("Type Something here");
         add(t);
-        menu.add(select);
+        menu.add(select); //// this all add menu item on menu
         menu.add(c);
         menu.add(v);
         menu.add(x);

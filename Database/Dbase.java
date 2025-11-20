@@ -10,7 +10,7 @@ public class Dbase {
 		final String uname = "root";
 		final String pwd = "";
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Java", uname, pwd);
+		cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Java", uname, pwd);
 	}
 
 	public void updateMarks() throws Exception {
@@ -22,7 +22,7 @@ public class Dbase {
 		stmt.setFloat(1, marks);
 		stmt.setFloat(2, roll);
 		int i = stmt.executeUpdate();
-		System.out.println("Records updated");
+		System.out.println("Records updated with" + i + " rows affected");
 
 	}
 
